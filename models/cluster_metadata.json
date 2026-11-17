@@ -1,0 +1,158 @@
+{
+  "n_clusters": 5,
+  "features": [
+    "annual_income",
+    "spending_score"
+  ],
+  "scaler_type": "standard",
+  "random_state": 42,
+  "metrics": {
+    "silhouette_score": 0.6507,
+    "davies_bouldin_index": 0.4569,
+    "calinski_harabasz_score": 559.93
+  },
+  "optimal_k_analysis": {
+    "k_range": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "inertias": [
+      400.00000000000006,
+      236.37623550265684,
+      127.81612481351783,
+      61.91350729712718,
+      32.03643118867538,
+      26.418804637912373,
+      23.03987609672423,
+      21.21079079523332,
+      19.2473592150677,
+      17.717593063772565
+    ],
+    "silhouette_scores": [
+      0.3988036885759334,
+      0.5157227082440403,
+      0.604949082216421,
+      0.650705574651698,
+      0.6030589073457773,
+      0.5431391275208576,
+      0.4777962953300313,
+      0.43598537388510605,
+      0.37985253096572946
+    ],
+    "best_k_silhouette": 5,
+    "best_k_elbow": 4
+  },
+  "cluster_centers_scaled": [
+    [
+      -1.0530309440363175,
+      1.0151894754294712
+    ],
+    [
+      -0.17046594675872817,
+      0.1087477099268715
+    ],
+    [
+      -1.120415736684653,
+      -0.9645603066152162
+    ],
+    [
+      1.0395305473179035,
+      1.2015382152180734
+    ],
+    [
+      1.042447299695338,
+      -1.0969034751382367
+    ]
+  ],
+  "cluster_centers_original": [
+    [
+      25.82857142857143,
+      76.91428571428571
+    ],
+    [
+      52.725,
+      51.325
+    ],
+    [
+      23.775,
+      21.024999999999995
+    ],
+    [
+      89.60000000000001,
+      82.17500000000001
+    ],
+    [
+      89.68888888888888,
+      17.288888888888884
+    ]
+  ],
+  "personas": {
+    "0": {
+      "cluster_id": 0,
+      "persona_name": "Youth Trendsetters / Enthusiasts",
+      "customer_count": 35,
+      "percentage": 17.5,
+      "avg_income": 25.83,
+      "avg_spending": 76.91,
+      "avg_age": 24.66,
+      "description": "Modest income earners with disproportionately high spending scores. Trend-driven, impulsive, and socially motivated.",
+      "marketing_strategy": "Engage via social media campaigns, influencer partnerships, flash discounts, limited editions, and flexible payment plans (BNPL).",
+      "retention_priority": "Medium - High brand advocacy but price-sensitive to macro changes."
+    },
+    "1": {
+      "cluster_id": 1,
+      "persona_name": "Mainstream / Everyday Balancers",
+      "customer_count": 40,
+      "percentage": 20.0,
+      "avg_income": 52.72,
+      "avg_spending": 51.32,
+      "avg_age": 35.72,
+      "description": "Average income earners with moderate spending behavior. Stable, predictable, and representative of the mass middle market.",
+      "marketing_strategy": "Seasonal discounts, family packages, standard loyalty tier progression, cross-category recommendations, and customer satisfaction surveys.",
+      "retention_priority": "Medium-High - Volume anchor of overall business."
+    },
+    "2": {
+      "cluster_id": 2,
+      "persona_name": "Budget Conscious / Thrifty",
+      "customer_count": 40,
+      "percentage": 20.0,
+      "avg_income": 23.78,
+      "avg_spending": 21.02,
+      "avg_age": 50.12,
+      "description": "Modest income earners who spend conservatively. Highly price-sensitive, practical, and focused on essential utilities.",
+      "marketing_strategy": "Value-oriented promotions, clearance events, bulk buy discounts, reward points on essentials, and transparent pricing without hidden fees.",
+      "retention_priority": "Low-to-Medium - Focus on automated cost-effective retention."
+    },
+    "3": {
+      "cluster_id": 3,
+      "persona_name": "VIP / High Rollers",
+      "customer_count": 40,
+      "percentage": 20.0,
+      "avg_income": 89.6,
+      "avg_spending": 82.18,
+      "avg_age": 33.0,
+      "description": "High income earners with high spending scores. Highly lucrative, brand-conscious, and value exclusivity.",
+      "marketing_strategy": "Direct high-tier loyalty programs, early access to luxury product launches, VIP events, personalized concierge, and premium bundled services.",
+      "retention_priority": "Critical - Maximum lifetime value (LTV)."
+    },
+    "4": {
+      "cluster_id": 4,
+      "persona_name": "Careful Savers / High Potential",
+      "customer_count": 45,
+      "percentage": 22.5,
+      "avg_income": 89.69,
+      "avg_spending": 17.29,
+      "avg_age": 47.51,
+      "description": "High income earners with conservative spending habits. Prudent, analytical, and seek tangible quality or ROI.",
+      "marketing_strategy": "Emphasize product quality, durability, premium warranties, and financial rewards/cashback. Targeted premium marketing highlighting long-term value.",
+      "retention_priority": "High - Huge untapped wallet share."
+    }
+  }
+}
